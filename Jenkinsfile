@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/DaJace22/autoscale.git' 
+                git branch: 'main', url: 'https://github.com/DaJace22/autoscale_MINE.git' 
             }
         }
         stage('Initialize Terraform') {
