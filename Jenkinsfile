@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        AWS_REGION = 'us-east-1' 
+        AWS_REGION = 'us-east-2' 
     }
     stages {
         stage('Set AWS Credentials') {
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'git@github.com:jdpayne68/autoscale.git' 
+                git branch: 'main', url: 'https://github.com/DaJace22/autoscale' 
             }
         }
         stage('Initialize Terraform') {
